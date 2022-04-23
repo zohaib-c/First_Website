@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <link href="htmlCSS.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <script src="script.js"></script>
+        
+        <title> Phones For All </title>
+    </head>
+    
+    <body>
+        
+        <!-- Heading and webshop logo -->
+        <h1> <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Signal-Logo.svg" alt = "Logo Picture"> Phones <span>For</span> All</h1>
+        <p> <em> <strong> The best deals on the latest smartphones &amp; much more </strong> </em> </p>
+        
+        
+        <!-- section links -->
+        <nav>
+            <a href="#bestSeller"> Best Seller</a>
+            <a href="#benefits"> Why choose us? </a>
+            <a href="#faq"> FAQ </a>
+            <a href="#contact"> Contact Us </a>
+            <a href="#cities"> Cities We Deliver To</a>
+        </nav>
+        
+        <!-- table of phones: dynamic -->
+        
+        <section id="bestSeller">
+            <h2> Best Sellers</h2>
+            <table id="bestTable">
+                <thead>
+                    <tr id="headings">
+                        <th><span id="brand" class="w3-button table-column"> Brand <i class="caret"> </i> </span> </th>
+                        <th><span id="model" class="w3-button table-column"> Model <i class="caret"> </i> </span> </th>
+                        <th><span id="os" class="w3-button table-column"> OS <i class="caret"> </i> </span> </th>
+                        <th><span id="screen" class="w3-button table-column"> Screen <i class="caret"> </i> </span> </th>
+                        <th><span id="image" class="w3-button table-column"> Image <i class="caret"> </i> </span> </th>      
+                    </tr>
+                </thead>
+                
+                <tbody id="tableBody"></tbody>
+                
+                <!-- using the last 5 cells to link to a form to enter new products -->
+                <tr>
+                    <td colspan="5"> <a href="#form"> Click here to enter a New Item... </a></td>
+                </tr>
+                
+                <caption> Our Top Selling Phones of 2021 </caption>   
+            </table> <br>
+            <button id="resetBtn" type="submit"> Reset Table </button>
+            
+        </section>
+        
+        
+        <!-- list showcasing cities we deliver to-->
+        <section id="cities">
+            <h2> Cities We Deliver To</h2>
+            <ul>
+                <li> <pre> Amsterdam </pre> </li>
+                <li> <pre> Utrecht </pre> </li>
+                <li> <pre> Rotterdam </pre> </li>
+                <li> <pre> Den Haag </pre> </li>
+            </ul>
+        
+        </section>
+        
+        <!-- form to enter new items -->
+        <section id="form">
+            <h2> Enter a New Phone Here</h2>
+            <form id="newEntry"> 
+                <input type="text" name="brand" placeholder="Brand Name"> <br>                   
+                <input type="text" name="model" placeholder="Model Name"> <br>           
+                <input type="text" name="os" placeholder="Operating System"> <br>               
+                <input type="number" name="screensize" placeholder="Screen Size"> <br>             
+                <input type="url" name="image" placeholder="URL of Image"> <br>             
+                <input id="submitBtn" type="submit" value="Submit">
+            </form> 
+        </section>
+        
+        <!-- A list showcasing our benefits -->
+        <section id="benefits">
+            <h2> Why choose us? </h2>            
+            <ul>
+                <li> <pre> Fast Delivery </pre> </li>
+                <li> <pre> Genuine Products </pre> </li>
+                <li> <pre> Easy return in 7 days </pre> </li>
+                <li> <pre> Best in class customer service </pre> </li>
+            </ul>
+            
+        </section>
+        
+        <!-- Using FAQ to showcase two different lists as well as abbreviation-->        
+        <section id="faq">
+            <h2> <abbr title="Frequently Asked Questions"> FAQ </abbr> </h2>
+            <dl>
+                <dt> Can I return the phone?</dt>
+                <dd> Yes, we have a full refund policy if the phone is returned in its original packaging within 7 days of purchase</dd>
+                
+                <dt> I did not recieve an email confirmation of my order</dt>
+                <dd> Please follow the following steps:
+                    <ol>
+                        <li>Wait 1 hour and check your inbox again as our servers take time to process your order and payment.</li>
+                        <li> Make sure you have given us the correct email. You can check this in your account settings.</li>
+                        <li> Check your spam folder.</li>
+                        <li> Make sure that payment has been made as we may not have received your payment. </li>
+                        <li>After steps 1-4, if you still do not receive confirmation please <a href="#contact">contact us.</a></li>
+                    </ol>
+                </dd>
+                
+            </dl>
+        </section>
+        
+        
+        <!-- a simple contact form that does not send complaints anywhere-->
+        <section id="contact">
+            <h2> Contact </h2>
+            
+            <form>
+                <label for="fname"> First Name: </label> <br>
+                <input type="text" id="fname" required> <br>
+                
+                <label for="lname"> Last Name: </label> <br>
+                <input type="text" id="lname" required> <br>
+                
+                <label for="email"> Email: </label> <br>
+                <input type="email" id="email" required> <br>
+                
+                <label for="subject"> Subject </label><br>
+                <textarea id="subject" placeholder="Enter your query here" required> </textarea> <br>
+                
+                <input type="submit" value="Submit">
+            </form>
+            
+        </section>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+:root {
+    --header-color: black;
+    --bg-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: larger;
+    }
+ 
+ body{
+     background-color: azure ;
+ }
+ h1{
+     font-family: cursive;
+     margin-bottom: 0px;
+     padding-bottom: 0px;
+     text-align: center;
+ }
+ 
+ h1 img{
+     width: 30px;
+     height: 30px;
+ }
+ h1 span{
+     color:red;
+     font-size: 30%;
+     font-family: inherit;
+ }
+ 
+ p{
+     margin-top: 0px;
+     padding-top: 0px;
+     text-align: center;
+ }
+ 
+ nav{
+     background-color:beige;
+     overflow: hidden;
+ }
+ nav:link{
+     color:red;
+}
+ nav a{
+     float: left;
+     color: coral;
+     text-align: center;
+     padding: 14px 50px;
+     font-size: 17px;
+     text-decoration: none;
+ }
+ 
+nav a:link{
+    border-color: brown;
+}
+nav a:hover{
+     background-color: cadetblue;
+     color:darkslateblue;
+ }
+
+nav a:active{
+    background-color: coral;
+}
+
+#bestTable{
+    width: 100%;
+    caption-side: top;
+    orphans: 2;
+    widows: 1;
+ }
+
+#bestTable caption{
+    margin-bottom: 30px;
+    font-family: sans-serif, Times;
+}
+ 
+#bestSeller h2{
+     text-align: center;
+     margin-top: 40px;
+     margin-bottom: 0px;
+ }
+
+table img{
+    width: 10%;
+    height: auto;
+    float: none;
+    vertical-align: bottom;
+ }
+ 
+ th:hover {
+    color:blue;
+    cursor: pointer;
+ }
+
+
+ th, td {
+    border-bottom: 1px none;
+    padding: 2px;
+    }
+ 
+ td{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 100%;
+    font-family: monospace, sans-serif;
+    font-weight: 300;
+    text-align: center
+    }
+
+.button{
+    padding: 5px 5px 5px 5px;
+}
+
+
+#cities h2{
+    margin-top: 100px;
+    width: auto;
+}
+
+#cities li{
+    list-style-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e9/Check_mark.svg")
+}
+
+ #form h2{
+     margin-top: 100px;
+ }
+ 
+ #form{
+     margin-bottom: 100px;
+ }
+ 
+ #form input{
+     width: 50%;
+     padding: 6px 20px;
+     margin: 8px;
+     box-sizing: border-box;
+ }
+ 
+ #form input:focus{
+     border: 4px solid blue;
+ }
+ 
+ 
+ #benefits{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    font-family:arial, Times;
+    font-variant: normal;
+    margin-left: 2px;
+    margin-right: 20px;
+    padding: 60px;
+    border: 5px inset;
+    border-color: rgb(76, 167, 228);
+    border-spacing: 0px;
+    border-width: 5px;
+    list-style-type: disc;
+    list-style-position: initial;
+    page-break-after:always;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8f/Checkmark.svg");
+    background-repeat: repeat-x;
+    
+    }
+ 
+ #faq h2{
+     margin-top: 100px;
+     margin-bottom: 20px;
+     text-align: center;
+     margin:0px;
+     text-decoration:underline;
+     }
+ 
+ 
+ #contact h2{
+     margin-top: 100px;
+ }
+ 
+ #contact input[type=text]{
+     width: 50%;
+     padding: 6px 20px;
+     margin: 8px;
+     box-sizing: border-box;
+ }
+ 
+ #contact input[type=email]{
+     width: 50%;
+     padding: 6px 20px;
+     margin: 8px;
+     box-sizing: border-box;
+ }
+ 
+ textarea{
+     width: 50%;
+     padding: 6px 20px;
+     margin: 8px;
+     box-sizing: border-box;
+ 
+ }
+   
+ #contact input:focus{
+     border: 4px solid blue;
+ }
+ #form {
+    page-break-before: always;
+ }
+
+@media screen and (max-width: 350){
+    table img{
+        width: 100%;
+        height: auto;
+    }
+}
